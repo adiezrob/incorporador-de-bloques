@@ -1,6 +1,6 @@
 # incorporador-de-bloques
 
-La función de este programa es escoger un fichero de un directorio que cumpla lo siguiente respecto a otro fichero dado: los dos ficheros son completamente iguales a diferencia de que el del directorio tiene una línea adicional en la que aparecen un número hexadecimal de ocho dígitos, un número hexadecimal de dos dígitos y el número 100 separados por tabuladores. Además, el fichero elegido será uno de los ficheros del directorio que más trabajo tenga atribuido al él.
+La función de este programa es escoger un fichero entre todos los de un directorio que cumpla lo siguiente respecto a otro fichero dado: los dos ficheros son completamente iguales a diferencia de que el del directorio tiene una línea adicional en la que aparecen un número hexadecimal de ocho dígitos, un número hexadecimal de dos dígitos y el número 100 separados por tabuladores. Además, el fichero elegido será uno de los ficheros del directorio que más trabajo tenga atribuido al él.
 
 **Pasos a seguir para usar el programa:**
 
