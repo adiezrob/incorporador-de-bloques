@@ -17,7 +17,6 @@ def cumplen(filename1, filename2):
         len2 = len(f.readlines())
 
     if abs(len1-len2) != 1:
-        # print("NO1")
         return -1
 
     else:
@@ -35,19 +34,16 @@ def cumplen(filename1, filename2):
             with open("../"+filename2, "r") as f2:
                 for line2 in f2:
                     af = f1.readline()
-                    if line2 != af:
+                    if line2 != af and af != line2+"\n":
                         same = False
-                        # print("NO2")
                         return -1
                 
                 h = hash(filename1)
                 if same and h[0] == "0" and re.search("[0-9a-z]{8}\t[0-9a-z]{2}\t100", f1.readline()):
-                    # print("SI")
                     for i in range(1,len(h)):
                         if h[i] != "0":
                             return i
                 else:
-                    # print("NO3")
                     return -1
 
 f1 = input("Escribe el nombre del fichero: ")
@@ -67,7 +63,5 @@ for fil in files:
 
 if len(longestFiles) > 0:
     print(longestFiles[0])
-    # print("max: " + str(m))
-    # print(len(longestFiles))
 else:
     print("No hay ficheros que cumplan las condiciones")
